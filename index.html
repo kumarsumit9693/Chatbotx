@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chatbot</title>
+    <!-- Google Fonts for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo"><a href="#">Chat<span>bot.</span></a></div>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+   <!-- Home Section -->
+<section class="home" id="home">
+  <div class="max-width">
+    <div class="home-content">
+      <div class="text-1">Hello, my name is</div>
+      <div class="text-2">ChatBotX</div>
+      <div class="text-3">And I'm an <span class="typing">AI-powered assistant</span></div>
+      <div class="text-4">To Start Chatting <span class="typing">click the icon on right side.</span></div>
+    </div>
+  </div>
+</section>
+
+    <!-- Home Section End -->
+
+    <!-- Chatbot Toggler -->
+    <button id="chatbot-toggler" aria-label="Open Chatbot">
+      <span class="material-symbols-rounded">mode_comment</span>
+      <span class="material-symbols-rounded">close</span>
+    </button>
+
+    <div class="chatbot-popup">
+      <!-- Chatbot Header -->
+      <div class="chat-header">
+        <div class="header-info">
+            <svg
+    class="chatbot-logo"
+    xmlns="http://www.w3.org/2000/svg"
+    width="50"
+    height="50"
+    viewBox="0 0 1024 1024"
+    aria-hidden="true"
+  >
+    <path d="M738.3 287.6 C750 300 760 350 800 400 S900 450 950 500" 
+          stroke="black" stroke-width="5" fill="none"/>
+  </svg>
+
+          <h2 class="logo-text">Chatbot</h2>
+        </div>
+        <button id="close-chatbot" class="material-symbols-rounded" aria-label="Close Chatbot">
+          keyboard_arrow_down
+        </button>
+      </div>
+
+      <!-- Chatbot Body -->
+      <div class="chat-body">
+        <div class="message bot-message">
+          <svg
+            class="bot-avatar"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 1024 1024"
+            aria-hidden="true"
+          >
+          </svg>
+          <div class="message-text">Hey there! <br /> How can I help you today?</div>
+        </div>
+      </div>
+
+      <!-- Chatbot Footer -->
+      <div class="chat-footer">
+        <form action="#" class="chat-form">
+          <textarea
+            placeholder="Message..."
+            class="message-input"
+            required
+            aria-label="Type your message"
+          ></textarea>
+          <div class="chat-controls">
+            <button
+              type="button"
+              id="emoji-picker"
+              class="material-symbols-outlined"
+              aria-label="Open Emoji Picker"
+            >
+              sentiment_satisfied
+            </button>
+            <div class="file-upload-wrapper">
+              <input type="file" accept="image/*" id="file-input" hidden />
+              <button
+                type="button"
+                id="file-upload"
+                class="material-symbols-rounded"
+                aria-label="Attach a file"
+              >
+                attach_file
+              </button>
+              <button
+                type="button"
+                id="file-cancel"
+                class="material-symbols-rounded"
+                aria-label="Remove attached file"
+              >
+                close
+              </button>
+            </div>
+            <button
+              type="submit"
+              id="send-message"
+              class="material-symbols-rounded"
+              aria-label="Send Message"
+            >
+              arrow_upward
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Emoji Mart Script -->
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
